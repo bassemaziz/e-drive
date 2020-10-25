@@ -1,1 +1,1 @@
-web: gunicron edrive.wsgi
+web: gunicorn edrive.wsgi

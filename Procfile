@@ -1,1 +1,1 @@
-web: gunicorn edrive.wsgi
+web: gunicorn edrive.wsgi --log-file -

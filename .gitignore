@@ -280,10 +280,6 @@ pip-selfcheck.json
 ### Project template
 
 MailHog
-vygit/media/
+media/
 
 .pytest_cache/
-
-## country data
-
-vygit/geonames/data/

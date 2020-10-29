@@ -1,0 +1,27 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+
+<div class="container">
+    {% if not files %}
+    <h3 class="text-center">No files are found </h3>
+    {% endif %}
+    <div class="row">
+        {% for file in files %}
+        <div class="col-md-3 col-sm-6 item">
+            <div class="card blogLink-bottom download-wrapper">
+                <div class="card-img-top img-fluid "> <i class="fa fa-file-{{ file.css_class }}"
+                        style="font-size:64px;color:red"> </i>
+                    <div class="card-body blue-bg">
+                        <h6 class="card-title">{{file.name}}</h6>
+                        <a href="{{file.file.url}}" class="btn btn-primary" download><span>Download</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock content %}

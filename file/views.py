@@ -1,12 +1,12 @@
-from django.http import HttpResponse 
-from django.shortcuts import render, redirect 
-from .forms import UploadFile
-from django.views.generic import View 
-from django.urls import reverse_lazy
-
-from .models import UserFile
-from django.db.models import Q
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
+from django.http import HttpResponse
+from django.shortcuts import redirect, render
+from django.urls import reverse_lazy
+from django.views.generic import View
+
+from .forms import UploadFile
+from .models import UserFile
 
 # Create your views here.
 
